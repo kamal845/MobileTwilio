@@ -4,3 +4,20 @@ npm i express nodemon mongoose body-parser dotenv otp-generator twilio.
 currentmillis :- ye otp ki milliseconds ki bhi information rakhta hai.currentmillis.com
 This api will not work after 1 month because of free trial is only for 1 month
 twilio se given phone number 1 month tak valid rahega.
+
+
+npm i twilio.
+
+voice api.:-
+const accountSid = 'your_account_sid';
+const authToken = 'your_auth_token';
+const client = require('twilio')(accountSid, authToken);
+
+client.calls
+  .create({
+    twiml: '<Response><Say>Hello, this is a test voice call!</Say></Response>',
+    to: 'recipient_phone_number',
+    from: 'your_twilio_phone_number',
+  })
+  .then(call => console.log(call.sid))
+  .catch(error => console.error(error));
