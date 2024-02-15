@@ -1,5 +1,6 @@
 otp database mai kaise store hoga .kaise send hoga .Aur kaise veify hoga.(send otp on mobile and verification)
 iske liye hamne ye packages iss command ke saath install kiye hai.
 npm i express nodemon mongoose body-parser dotenv otp-generator twilio.
-currentmillis :- ye otp ki milliseconds ki bhi information rakhta hai.
+currentmillis :- ye otp ki milliseconds ki bhi information rakhta hai.currentmillis.com
 This api will not work after 1 month because of free trial is only for 1 month
+twilio se given phone number 1 month tak valid rahega.
